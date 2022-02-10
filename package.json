@@ -1,0 +1,12 @@
+{
+  "name": "poc-yarn-ws-monorepos",
+  "packageManager": "yarn@3.1.1",
+  "private": true,
+  "workspaces": [
+    "root-app",
+    "microfrontends/*"
+  ],
+  "scripts": {
+    "start": "yarn workspaces foreach -pv run start"
+  }
+}
